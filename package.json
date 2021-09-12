@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "this repository for description sheet life.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalvinxo/Portafolio.git"
+  },
+  "author": "Dalvin D. Molina O.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalvinxo/Portafolio/issues"
+  },
+  "homepage": "https://github.com/dalvinxo/Portafolio#readme"
+}
