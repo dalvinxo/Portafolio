@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dalvinxo/Portafolio/issues"
   },
-  "homepage": "https://github.com/dalvinxo/Portafolio#readme"
+  "homepage": "https://github.com/dalvinxo/Portafolio#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
