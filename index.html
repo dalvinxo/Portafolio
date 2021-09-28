@@ -6,9 +6,35 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
   </head>
   <body>
-    <h1>hola mundo</h1>
-    <h2>todo bien</h2>
-    <i class="fa fas fa-camera"></i>
-    <i class="fa fas fa-ad"></i>
+    <nav id="navbar" role="menu">
+      <div>
+        <figure id="profile-img" class="nav-brand">
+          <img
+            src="./assets/img/avatar.png"
+            class="img-menu"
+            alt="image profile avatar"
+          />
+          <figcaption>Welcome</figcaption>
+        </figure>
+        <button id="btn-sidebar" class="btn action-menu">
+          <i class="fa fas fa-arrow-circle-right"></i>
+        </button>
+      </div>
+      <ul role="menubar navigation">
+        <li role="menuitem">
+          <a>Header</a>
+        </li>
+        <li role="menuitem">
+          <a>cursos</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main" role="main"></main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
