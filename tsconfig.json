@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",    
+    "module": "commonjs",                         
+    "outDir": "./scripts/js",
+    "rootDir": "./scripts/ts",     
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,      
+    "strict": true,                                  
+    "noImplicitAny": true,                
+    "strictNullChecks": true,                            
+    "useUnknownInCatchVariables": true,                
+    "skipLibCheck": true                            
+  },
+  "include": ["src/**/*", "scripts/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
