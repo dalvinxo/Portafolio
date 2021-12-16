@@ -11,52 +11,62 @@
   </head>
   <body>
     <nav id="navbar" role="navigation">
-      <div>
-        <figure id="profile-img" class="nav-brand">
-          <img
-            src="./assets/img/avatar.png"
-            class="img-menu"
-            alt="image profile avatar"
-          />
-          <figcaption>Welcome</figcaption>
-        </figure>
-        <button id="btn-sidebar" class="btn action-menu">
-          <i class="fa fas fa-arrow-circle-right"></i>
-        </button>
-      </div>
       <menu role="menubar">
         <li role="menuitem">
-          <a>Header</a>
+          <a>Start</a>
         </li>
         <li role="menuitem">
-          <a>cursos</a>
+          <a>Project</a>
+        </li>
+        <li role="menuitem">
+          <a>Skill</a>
+        </li>
+        <li role="menuitem">
+          <a>Contact</a>
         </li>
       </menu>
     </nav>
 
     <header id="header" role="heading">
       <div class="header-top container">
-        <figure>
-          <picture aria-controls="controls" controls>
-            <source
-              type="img"
-              srcset=""
-              media="(min-width: 90rem)"
+        <div class="header-logo">
+          <figure id="profile-img" class="nav-brand">
+            <img
+              src="./assets/img/avatar.png"
+              class="img-menu"
+              alt="image profile avatar"
             />
-          </picture>
-          <figcaption>photo author of website</figcaption>
-        </figure>
-        <section id="header-description">
-          <h2>Description motivadora</h2>
-          <article class="header-description-phrase">
-            <dl>
-              <dt>Coffee</dt>
-              <dd>Black hot drink</dd>
-              <dt>Milk</dt>
-              <dd>White cold drink</dd>
-            </dl>
-          </article>
-        </section>
+            <figcaption>Welcome</figcaption>
+          </figure>
+          <div class="mode-colors">
+            <button id="btn-change-color">
+              dark
+            </button>
+          </div>
+        </div>
+        <div class="header-thumbnail">
+          <figure>
+            <picture aria-controls="controls" controls>
+              <source
+                type="img"
+                srcset=""
+                media="(min-width: 90rem)"
+              />
+            </picture>
+            <figcaption>photo author of website</figcaption>
+          </figure>
+          <section id="header-description">
+            <h2>Description motivadora</h2>
+            <article class="header-description-phrase">
+              <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+              </dl>
+            </article>
+          </section>
+        </div>      
       </div>
       <div class="header-bottom-waves">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1400 320">
@@ -70,50 +80,126 @@
     </header>
 
     <main id="main" role="main">
-      <section id="main-project container">
+      <section id="main-project" class="container">
         <div class="main-section-title">
           <hgroup>
-            <h2>My projects</h2>
+            <h2>My works</h2>
             <h3>details and documents<h3>
           </hgroup>       
         </div>
-        <div>
-          <section class="main-project-list">
+        <div id="list-project" class="main-project-list">
             <article class="card">
-              <picture constrols="">
-                <source srcset="">
+              <picture class="card-img-details">
+                <source
+                  type="img"
+                  class="card-img"
+                  alt="image of project"
+                  src="assets/img/avatar.png"
+                />
               </picture>
-              <header>
-
+              <header class="card-header">
+                <h4 class="card-title">Project name</h4> 
+                <h5>description</h5>
+                <p>dajdwajdaowdinakcnk</p>
               </header>
-              <footer>
-                <
+              <footer class="card-footer">
+                <div class="card-footer-status">
+                  <span>In Progress</span>
+                </div>
               </footer>
             </article>
-
-          </section>
-          <section class="main-project-details">
-        
-          </section>
-        </div>
-        
-        
+          <!-- <section id="details-project" class="main-project-details">
+              <article class="card-details">
+                <picture class="card-img-details">
+                  <source
+                    type="img"
+                    src="assets/img/avatar.png"
+                    alt="details image project"
+                  />
+                </picture>
+                <header class="card-header-details">
+                  <h4 class="card-title-details">Project name Detalle</h4> 
+                </header>
+                <footer class="card-footer-details">
+                  <article class="card-footer-contact">
+                    <div class="card-footer-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="card-footer-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </article>
+                </footer>
+          </section> -->
+        </div>        
       </section>
-      <section id="main-skill container">
+      
+      <section id="main-skill" class="container">
         <div class="main-section-title">
           <hgroup>
-            <h2>language</h2>
-            <h3>skills and mastery</h3>
+            <h2>Tecnology</h2>
+            <h3>Language, framework and Dev Tools</h3>
           </hgroup>       
         </div>
-        <section class="main-skill-content">
-
+        <section id="tecnology" class="skill-content">
+          <div>
+            <article class="card-skill-item">
+              <header class="card-header-skill">
+                <h4 class="card-title-skill">Skill</h4>
+              </header>
+              <div class="card-skill-content">
+                <div class="skill skill-red">
+                  <span>C# (C Sharp)</span>
+                </div>
+                <div class="skill skill-yellow">
+                  <span>SASS</span>
+                </div>
+                <div class="skill skill-green">
+                  <span>Typescript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article class="skill-level-container">
+              <div class="skill-level-content">
+                <ul class="progress-level-list">
+                  <li class="progress-level-basic"></li>
+                  <li class="progress-level-medium"></li>
+                  <li class="progress-level-height"></li>
+                </ul>
+                <h5 class="skill">Level of mastery</h5> 
+              </div>
+            </article>
+          </div>        
         </section>
-       
-        <article class="description-phrase">
-        </article>
       </section>
     </main>
+
+    <footer>
+      <section id="main-contact" class="container">
+        <div class="logo-footer">
+          <picture>
+            <source
+              type="img"
+              srcset=""
+              media="(min-width: 90rem)"
+            />
+          </picture>
+        </div>
+        <article class="contact-list">
+          <div class="contact-item">
+            <header class="contact-item-header">
+              <span>icono</span>
+              <h4 class="contact-item-title">Github</h4>
+            </header>            
+          </div>
+        </article>
+        <article id="copyright">
+            <p>Realizado desde cero por dalvinxo</p>
+        </article>
+      </section>
+    </footer>
     <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
