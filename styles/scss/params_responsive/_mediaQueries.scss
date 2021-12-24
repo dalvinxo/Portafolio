@@ -1,0 +1,25 @@
+@use 'rulesResponsives' as maxWidth;
+
+@mixin mobile{
+    @media screen and (max-width: maxWidth.$mobile){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: maxWidth.$tablet) {
+        @content;
+    }
+}
+
+@mixin laptop{
+    @media screen and (max-width: maxWidth.$laptop) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (max-width: maxWidth.$desktop) {
+        @content;
+    }
+}
