@@ -1,0 +1,9 @@
+@mixin content-width-heigth($heigth, $width){
+    height: $heigth;
+    width: $width;
+}
+
+%ajust-device {
+    width: 100%;
+    height: 100vh;
+}

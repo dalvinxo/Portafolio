@@ -1,0 +1,27 @@
+@import "../helpers_style/specificationContent";
+
+#main {
+  #main-wrapper {
+    height: 100vh;
+    width: 80%;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    #main-project {
+      background-color: lightcoral;
+    }
+  }
+
+  .container {
+    scroll-snap-align: center;
+    @include content-width-heigth(100vh, 100%);
+  }
+
+  .main-section-title {
+    background-color: lightcoral;
+    padding: 2rem;
+    color: blueviolet;
+  }
+}
