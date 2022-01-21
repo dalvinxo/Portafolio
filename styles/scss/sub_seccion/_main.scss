@@ -1,27 +1,29 @@
 @import "../helpers_style/specificationContent";
+@import "../params_responsive/_mediaQueries";
 
 #main {
-  #main-wrapper {
-    height: 100vh;
-    width: 80%;
-
-    @include tablet {
-      width: 100%;
-    }
-
-    #main-project {
-      background-color: lightcoral;
-    }
-  }
+  @include content-heigth-width(auto, 100%);
 
   .container {
-    scroll-snap-align: center;
-    @include content-width-heigth(100vh, 100%);
+    @include content-heigth-width(auto, 100%);
+    min-height: 100vh;
   }
 
-  .main-section-title {
-    background-color: lightcoral;
-    padding: 2rem;
-    color: blueviolet;
-  }
+
+
+  @import "./mainSkill";
+
+  // @include tablet {
+  //   width: 100%;
+  // }
+
+  // #main-project {
+  //   background-color: lightcoral;
+  // }
+
+  // .main-section-title {
+  //   background-color: rgb(165, 2, 2);
+  //   padding: 2rem;
+  //   color: blueviolet;
+  // }
 }

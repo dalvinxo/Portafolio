@@ -1,9 +1,24 @@
-@mixin content-width-heigth($heigth, $width){
-    height: $heigth;
-    width: $width;
+@mixin content-heigth-width($heigth, $width) {
+  height: $heigth;
+  width: $width;
 }
 
 %ajust-device {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+@mixin card-size($size, $radius) {
+  height: $size + 6;
+  width: $size;
+  border-radius: $radius;
+}
+
+@mixin wrapper_content($width, $height: 0) {
+  width: $width;
+  height: 100vh;
+
+  @if $height != 0 {
+    height: $height;
+  }
 }

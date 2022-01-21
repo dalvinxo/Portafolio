@@ -16,28 +16,19 @@ $secondary-rojo: green;
   }
 }
 
-%ajust-device {
-  width: 100%;
-  height: 100vh;
-}
-
 :root {
   scroll-behavior: smooth;
 }
 
-#body {
-  @extend %ajust-device;
+//variables import
+@import "./mapVariables";
 
-  #main-container {
-    @extend %ajust-device;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    .group {
-      @extend %ajust-device;
-      scroll-snap-align: start;
-    }
-  }
-}
+//style import
+@import "./sub_seccion/header";
+@import "./sub_seccion/main";
+
+//font import
+@import "./helpers_style/fonts";
 
 // ----- start style scrollbar---------
 ::-webkit-scrollbar {
@@ -62,7 +53,3 @@ $secondary-rojo: green;
   background-color: rgb(78, 77, 77);
 }
 // -----end style scrollbar---------
-
-//style import
-@import "sub_seccion/header";
-@import "sub_seccion/main";

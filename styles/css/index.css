@@ -4,73 +4,45 @@
   margin: 0%;
   box-sizing: border-box; }
 
-#body, #body #main-container, #body #main-container .group {
-  width: 100%;
-  height: 100vh; }
-
 :root {
   scroll-behavior: smooth; }
 
-#body #main-container {
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory; }
-  #body #main-container .group {
-    scroll-snap-align: start; }
-
-::-webkit-scrollbar {
-  width: 0.4em; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(128, 127, 127, 0.658);
-  border-radius: 10px; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: #585858;
-  border-radius: 0.5rem;
-  transition: background-color 2s; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #4e4d4d; }
-
-#body, #body #main-container, #body #main-container .group {
-  width: 100%;
-  height: 100vh; }
+#waves-style {
+  max-height: 2rem;
+  border: none;
+  outline: 0rem;
+  fill: #2e2e2e; }
 
 #header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: blueviolet;
   padding-top: 1rem;
   display: flex;
   justify-content: center; }
   #header #header-wrapper {
-    height: 100vh;
-    width: 80%; }
+    width: 80%;
+    height: 100vh; }
     @media screen and (max-width: 768px) {
       #header #header-wrapper {
-        width: 100%; } }
+        width: 100%;
+        width: 100%;
+        height: 100vh; } }
     #header #header-wrapper .header-top-inf {
       width: 100%;
       display: flex;
       justify-content: space-between;
       padding: 0 1rem;
-      background-color: aquamarine;
       padding: 1rem; }
       #header #header-wrapper .header-top-inf .github-name {
         text-align: center;
         color: darkslategray;
-        font-size: 1rem;
-        background-color: deeppink; }
+        font-size: 1rem; }
       #header #header-wrapper .header-top-inf .color-mode {
         background-color: dimgray; }
     #header #header-wrapper .header-thumbnail {
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-      height: calc(100% - 120px);
-      background-color: brown; }
+      height: calc(100% - 120px); }
       #header #header-wrapper .header-thumbnail figure {
         display: flex;
         justify-content: center;
@@ -126,25 +98,137 @@
             border-radius: 0.5rem;
             padding: 1rem; }
 
-#body, #body #main-container, #body #main-container .group {
-  width: 100%;
-  height: 100vh; }
-
-#main #main-wrapper {
-  height: 100vh;
-  width: 80%; }
-  @media screen and (max-width: 768px) {
-    #main #main-wrapper {
-      width: 100%; } }
-  #main #main-wrapper #main-project {
-    background-color: lightcoral; }
-
-#main .container {
-  scroll-snap-align: center;
-  height: 100vh;
+#main {
+  height: auto;
   width: 100%; }
+  #main .container {
+    height: auto;
+    width: 100%;
+    min-height: 100vh; }
+  #main #main-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #main #main-skill .wrapper-content {
+      width: 80%;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 1rem;
+      padding-top: 6rem;
+      gap: 1rem; }
+      #main #main-skill .wrapper-content .main-section-title {
+        width: 100%;
+        padding: 0.8rem; }
+        #main #main-skill .wrapper-content .main-section-title .title {
+          font-family: "opensbold";
+          font-size: 1.8rem; }
+        #main #main-skill .wrapper-content .main-section-title .subtitle {
+          font-family: "openscondenselight";
+          font-size: 1.4rem; }
+      #main #main-skill .wrapper-content #tecnology .list-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+        grid-auto-rows: 25rem;
+        gap: 2rem; }
+        #main #main-skill .wrapper-content #tecnology .list-grid article {
+          border-radius: 1rem;
+          overflow: hidden;
+          background: white; }
+          #main #main-skill .wrapper-content #tecnology .list-grid article .card-header {
+            background: burlywood;
+            border-radius: 1rem 1rem 0 0;
+            padding: 0.5rem; }
+            #main #main-skill .wrapper-content #tecnology .list-grid article .card-header .card-title {
+              text-align: center;
+              font-size: 1.4rem;
+              font-family: "openscondense"; }
+          #main #main-skill .wrapper-content #tecnology .list-grid article .card-content {
+            height: 100%; }
+            #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list {
+              height: 87%;
+              display: flex;
+              flex-direction: column;
+              flex-flow: column nowrap;
+              overflow-y: auto;
+              scroll-snap-type: y proximity; }
+              #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper {
+                scroll-snap-align: center;
+                width: 100%;
+                background: white;
+                position: relative;
+                border-top: 1px ridge rgba(131, 131, 131, 0.801); }
+                #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper :hover {
+                  background: gray; }
+                #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item {
+                  display: flex;
+                  padding: 1rem;
+                  justify-content: space-between;
+                  align-items: center; }
+                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .item-name {
+                    color: #385f99;
+                    font-family: "opensbold";
+                    font-weight: 700; }
+                    #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .item-name .favorite {
+                      border-radius: 1rem;
+                      padding: 0.3rem 1rem;
+                      font-size: 1rem;
+                      background-color: darkorange;
+                      color: whitesmoke;
+                      font-family: "openscondense"; }
+                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level {
+                    text-align: center;
+                    background-color: blanchedalmond;
+                    border-radius: 1rem;
+                    padding: 0.3rem 1rem;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: white;
+                    font-family: "openscondenselight"; }
+                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.bajo {
+                    background-color: #d43934; }
+                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.medio {
+                    background-color: #f7cc10; }
+                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.alto {
+                    background-color: #24ce3a; }
 
-#main .main-section-title {
-  background-color: lightcoral;
-  padding: 2rem;
-  color: blueviolet; }
+@font-face {
+  font-family: opens;
+  src: url("../../../assets/fonts/OpenSansRegular.ttf"); }
+
+@font-face {
+  font-family: opensbold;
+  src: url("../../../assets/fonts/OpenSansBold.ttf"); }
+
+@font-face {
+  font-family: openscondense;
+  src: url("../../../assets/fonts/OpenSansCondensedRegular.ttf"); }
+
+@font-face {
+  font-family: openscondenselight;
+  src: url("../../../assets/fonts/OpenSansCondensedLight.ttf"); }
+
+@font-face {
+  font-family: opensitalic;
+  src: url("../../../assets/fonts/OpenSansItalic.ttf"); }
+
+@font-face {
+  font-family: openslight;
+  src: url("../../../assets/fonts/OpenSansLight.ttf"); }
+
+::-webkit-scrollbar {
+  width: 0.4em; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 127, 127, 0.658);
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #585858;
+  border-radius: 0.5rem;
+  transition: background-color 2s; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4e4d4d; }
