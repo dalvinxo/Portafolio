@@ -1,0 +1,115 @@
+@import "../helpers_style/mainSeccion";
+
+#main-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mainSession(6rem) {
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+      grid-auto-rows: 25rem;
+      gap: 2rem;
+
+      // grid-column: 1/2;
+
+      article {
+        border-radius: 1rem;
+        overflow: hidden;
+        // padding: 1rem;
+        background: white;
+
+        .card-header {
+          background: burlywood;
+          border-radius: 1rem 1rem 0 0;
+          padding: 0.5rem;
+          .card-title {
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: nth($font-opens, 5);
+          }
+        }
+
+        .card-content {
+          height: 100%;
+
+          .card-content-list {
+            height: 87%;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column nowrap;
+            overflow-y: auto;
+            scroll-snap-type: y proximity;
+
+            .wrapper {
+              scroll-snap-align: center;
+              width: 100%;
+              background: white;
+              position: relative;
+
+              :hover {
+                background: gray;
+              }
+
+              .item {
+                display: flex;
+                padding: 1rem;
+                justify-content: space-between;
+                align-items: center;
+
+                .item-name {
+                  color: rgb(56, 95, 153);
+                  font-family: nth($font-opens, 2);
+                  font-weight: 700;
+
+                  .favorite {
+                    border-radius: 1rem;
+                    padding: 0.3rem 1rem;
+                    font-size: 1rem;
+                    background-color: darkorange;
+                    color: whitesmoke;
+                    font-family: nth($font-opens, 5);
+                  }
+                }
+
+                .level {
+                  text-align: center;
+                  background-color: blanchedalmond;
+                  border-radius: 1rem;
+                  padding: 0.3rem 1rem;
+                  font-size: 1rem;
+                  font-weight: 700;
+                  color: white;
+                  font-family: nth($font-opens, 6);
+                }
+
+                .level.bajo {
+                  background-color: rgb(212, 57, 52);
+                }
+
+                .level.medio {
+                  background-color: rgb(247, 204, 16);
+                }
+
+                .level.alto {
+                  background-color: rgb(36, 206, 58);
+                }
+              }
+
+              
+            }
+
+            .wrapper:not(:last-of-type){
+              border-bottom: 1px ridge rgba(131, 131, 131, 0.801);
+            }
+            
+          }
+        }
+
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        // transition: 0.3s;
+      }
+    }
+  }
+}

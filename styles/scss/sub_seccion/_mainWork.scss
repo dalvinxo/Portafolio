@@ -1,0 +1,11 @@
+@import "../helpers_style/mainSeccion";
+
+#main-project {
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+
+  @include mainSession(1rem) {
+    background-color: darkorange;
+  }
+}

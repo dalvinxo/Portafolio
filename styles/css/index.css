@@ -17,7 +17,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 1rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #2e2e2e; }
   #header #header-wrapper {
     width: 80%;
     height: 100vh; }
@@ -125,57 +126,56 @@
         #main #main-skill .wrapper-content .main-section-title .subtitle {
           font-family: "openscondenselight";
           font-size: 1.4rem; }
-      #main #main-skill .wrapper-content #tecnology .list-grid {
+      #main #main-skill .wrapper-content .content-session .list-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
         grid-auto-rows: 25rem;
         gap: 2rem; }
-        #main #main-skill .wrapper-content #tecnology .list-grid article {
+        #main #main-skill .wrapper-content .content-session .list-grid article {
           border-radius: 1rem;
           overflow: hidden;
           background: white; }
-          #main #main-skill .wrapper-content #tecnology .list-grid article .card-header {
+          #main #main-skill .wrapper-content .content-session .list-grid article .card-header {
             background: burlywood;
             border-radius: 1rem 1rem 0 0;
             padding: 0.5rem; }
-            #main #main-skill .wrapper-content #tecnology .list-grid article .card-header .card-title {
+            #main #main-skill .wrapper-content .content-session .list-grid article .card-header .card-title {
               text-align: center;
               font-size: 1.4rem;
               font-family: "openscondense"; }
-          #main #main-skill .wrapper-content #tecnology .list-grid article .card-content {
+          #main #main-skill .wrapper-content .content-session .list-grid article .card-content {
             height: 100%; }
-            #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list {
+            #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list {
               height: 87%;
               display: flex;
               flex-direction: column;
               flex-flow: column nowrap;
               overflow-y: auto;
               scroll-snap-type: y proximity; }
-              #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper {
+              #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper {
                 scroll-snap-align: center;
                 width: 100%;
                 background: white;
-                position: relative;
-                border-top: 1px ridge rgba(131, 131, 131, 0.801); }
-                #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper :hover {
+                position: relative; }
+                #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper :hover {
                   background: gray; }
-                #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item {
+                #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item {
                   display: flex;
                   padding: 1rem;
                   justify-content: space-between;
                   align-items: center; }
-                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .item-name {
+                  #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .item-name {
                     color: #385f99;
                     font-family: "opensbold";
                     font-weight: 700; }
-                    #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .item-name .favorite {
+                    #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .item-name .favorite {
                       border-radius: 1rem;
                       padding: 0.3rem 1rem;
                       font-size: 1rem;
                       background-color: darkorange;
                       color: whitesmoke;
                       font-family: "openscondense"; }
-                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level {
+                  #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .level {
                     text-align: center;
                     background-color: blanchedalmond;
                     border-radius: 1rem;
@@ -184,12 +184,36 @@
                     font-weight: 700;
                     color: white;
                     font-family: "openscondenselight"; }
-                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.bajo {
+                  #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .level.bajo {
                     background-color: #d43934; }
-                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.medio {
+                  #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .level.medio {
                     background-color: #f7cc10; }
-                  #main #main-skill .wrapper-content #tecnology .list-grid article .card-content .card-content-list .wrapper .item .level.alto {
+                  #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper .item .level.alto {
                     background-color: #24ce3a; }
+              #main #main-skill .wrapper-content .content-session .list-grid article .card-content .card-content-list .wrapper:not(:last-of-type) {
+                border-bottom: 1px ridge rgba(131, 131, 131, 0.801); }
+  #main #main-project {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center; }
+    #main #main-project .wrapper-content {
+      width: 80%;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 1rem;
+      padding-top: 1rem;
+      gap: 1rem; }
+      #main #main-project .wrapper-content .main-section-title {
+        width: 100%;
+        padding: 0.8rem; }
+        #main #main-project .wrapper-content .main-section-title .title {
+          font-family: "opensbold";
+          font-size: 1.8rem; }
+        #main #main-project .wrapper-content .main-section-title .subtitle {
+          font-family: "openscondenselight";
+          font-size: 1.4rem; }
+      #main #main-project .wrapper-content .content-session {
+        background-color: darkorange; }
 
 @font-face {
   font-family: opens;

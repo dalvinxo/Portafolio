@@ -1,0 +1,30 @@
+@mixin mainSession($padding-top) {
+
+  .wrapper-content {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    padding-top: $padding-top;
+    gap: 1rem;
+
+    .main-section-title {
+      width: 100%;
+      padding: 0.8rem;
+
+      .title {
+        font-family: nth($font-opens, 2);
+        font-size: 1.8rem;
+      }
+
+      .subtitle {
+        font-family: nth($font-opens, 6);
+        font-size: 1.4rem;
+      }
+    }
+
+    .content-session {
+      @content;
+    }
+  }
+}
