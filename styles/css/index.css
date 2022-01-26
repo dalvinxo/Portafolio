@@ -212,8 +212,22 @@
         #main #main-project .wrapper-content .main-section-title .subtitle {
           font-family: "openscondenselight";
           font-size: 1.4rem; }
-      #main #main-project .wrapper-content .content-session {
-        background-color: darkorange; }
+    #main #main-project #list-project {
+      background-color: #b6b327; }
+      #main #main-project #list-project #content-project {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 1rem;
+        padding: 1rem; }
+        #main #main-project #list-project #content-project .group-project {
+          text-align: center; }
+          #main #main-project #list-project #content-project .group-project .projects ul {
+            text-decoration: none; }
+            #main #main-project #list-project #content-project .group-project .projects ul li {
+              list-style: none; }
+              #main #main-project #list-project #content-project .group-project .projects ul li label {
+                color: #32cd78; }
 
 @font-face {
   font-family: opens;

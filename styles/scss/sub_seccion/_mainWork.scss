@@ -5,7 +5,34 @@
   display: flex;
   justify-content: center;
 
-  @include mainSession(1rem) {
-    background-color: darkorange;
+  @include mainSession(1rem);
+
+  #list-project {
+    background-color: rgb(182, 179, 39);
+
+    #content-project {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+
+      .group-project {
+        text-align: center;
+
+        .projects {
+          ul {
+            text-decoration: none;
+
+            li {
+              list-style: none;
+              label {
+                color: rgb(50, 205, 120);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
