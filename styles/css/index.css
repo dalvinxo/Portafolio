@@ -7,6 +7,30 @@
 :root {
   scroll-behavior: smooth; }
 
+@font-face {
+  font-family: opens;
+  src: url("../../../assets/fonts/OpenSansRegular.ttf"); }
+
+@font-face {
+  font-family: opensbold;
+  src: url("../../../assets/fonts/OpenSansBold.ttf"); }
+
+@font-face {
+  font-family: openscondense;
+  src: url("../../../assets/fonts/OpenSansCondensedRegular.ttf"); }
+
+@font-face {
+  font-family: openscondenselight;
+  src: url("../../../assets/fonts/OpenSansCondensedLight.ttf"); }
+
+@font-face {
+  font-family: opensitalic;
+  src: url("../../../assets/fonts/OpenSansItalic.ttf"); }
+
+@font-face {
+  font-family: openslight;
+  src: url("../../../assets/fonts/OpenSansLight.ttf"); }
+
 #waves-style {
   max-height: 2rem;
   border: none;
@@ -117,9 +141,23 @@
       padding: 1rem;
       padding-top: 6rem;
       gap: 1rem; }
+      @media screen and (max-width: 768px) {
+        #main #main-skill .wrapper-content {
+          width: 90%;
+          padding: 0rem; } }
+      @media screen and (max-width: 360px) {
+        #main #main-skill .wrapper-content {
+          width: 100%;
+          padding: 1rem; } }
       #main #main-skill .wrapper-content .main-section-title {
         width: 100%;
         padding: 0.8rem; }
+        @media screen and (max-width: 768px) {
+          #main #main-skill .wrapper-content .main-section-title {
+            padding-top: 4rem; } }
+        @media screen and (max-width: 360px) {
+          #main #main-skill .wrapper-content .main-section-title {
+            padding-top: 2rem; } }
         #main #main-skill .wrapper-content .main-section-title .title {
           font-family: "opensbold";
           font-size: 1.8rem; }
@@ -203,9 +241,23 @@
       padding: 1rem;
       padding-top: 1rem;
       gap: 1rem; }
+      @media screen and (max-width: 768px) {
+        #main #main-project .wrapper-content {
+          width: 90%;
+          padding: 0rem; } }
+      @media screen and (max-width: 360px) {
+        #main #main-project .wrapper-content {
+          width: 100%;
+          padding: 1rem; } }
       #main #main-project .wrapper-content .main-section-title {
         width: 100%;
         padding: 0.8rem; }
+        @media screen and (max-width: 768px) {
+          #main #main-project .wrapper-content .main-section-title {
+            padding-top: 4rem; } }
+        @media screen and (max-width: 360px) {
+          #main #main-project .wrapper-content .main-section-title {
+            padding-top: 2rem; } }
         #main #main-project .wrapper-content .main-section-title .title {
           font-family: "opensbold";
           font-size: 1.8rem; }
@@ -217,41 +269,30 @@
       #main #main-project #list-project #content-project {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-template-columns: min-content 1fr;
         gap: 1rem;
         padding: 1rem; }
-        #main #main-project #list-project #content-project .group-project {
-          text-align: center; }
-          #main #main-project #list-project #content-project .group-project .projects ul {
-            text-decoration: none; }
-            #main #main-project #list-project #content-project .group-project .projects ul li {
-              list-style: none; }
-              #main #main-project #list-project #content-project .group-project .projects ul li label {
+        @media screen and (max-width: 768px) {
+          #main #main-project #list-project #content-project {
+            grid-template-rows: min-content 1fr;
+            grid-template-columns: 1fr; } }
+        #main #main-project #list-project #content-project .group-projects {
+          text-align: center;
+          padding: 0.5rem; }
+          @media screen and (max-width: 768px) {
+            #main #main-project #list-project #content-project .group-projects header {
+              display: none; } }
+          #main #main-project #list-project #content-project .group-projects .projects ul {
+            list-style: none; }
+            #main #main-project #list-project #content-project .group-projects .projects ul li {
+              padding: 1rem 0rem; }
+              @media screen and (max-width: 768px) {
+                #main #main-project #list-project #content-project .group-projects .projects ul li {
+                  display: inline-block; } }
+              #main #main-project #list-project #content-project .group-projects .projects ul li label {
                 color: #32cd78; }
-
-@font-face {
-  font-family: opens;
-  src: url("../../../assets/fonts/OpenSansRegular.ttf"); }
-
-@font-face {
-  font-family: opensbold;
-  src: url("../../../assets/fonts/OpenSansBold.ttf"); }
-
-@font-face {
-  font-family: openscondense;
-  src: url("../../../assets/fonts/OpenSansCondensedRegular.ttf"); }
-
-@font-face {
-  font-family: openscondenselight;
-  src: url("../../../assets/fonts/OpenSansCondensedLight.ttf"); }
-
-@font-face {
-  font-family: opensitalic;
-  src: url("../../../assets/fonts/OpenSansItalic.ttf"); }
-
-@font-face {
-  font-family: openslight;
-  src: url("../../../assets/fonts/OpenSansLight.ttf"); }
+        #main #main-project #list-project #content-project .details-project {
+          padding: 0.5rem; }
 
 ::-webkit-scrollbar {
   width: 0.4em; }

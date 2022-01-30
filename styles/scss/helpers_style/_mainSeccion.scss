@@ -1,5 +1,4 @@
 @mixin mainSession($padding-top) {
-
   .wrapper-content {
     width: 80%;
     display: flex;
@@ -8,9 +7,27 @@
     padding-top: $padding-top;
     gap: 1rem;
 
+    @include tablet {
+      width: 90%;
+      padding: 0rem;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 1rem;
+    }
+
     .main-section-title {
       width: 100%;
       padding: 0.8rem;
+
+      @include tablet {
+        padding-top: 4rem;
+      }
+
+      @include mobile {
+        padding-top: 2rem;
+      }
 
       .title {
         font-family: nth($font-opens, 2);
