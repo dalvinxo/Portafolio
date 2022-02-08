@@ -11,9 +11,25 @@
     #content-project {
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: min-content 1fr;
-      gap: 1rem;
+      grid-template-columns: 20% 1fr;
+      gap: 1rem 1rem;
       padding: 1rem;
+
+      .title {
+        font-family: nth($font-opens, 2);
+        border-bottom: 1px ridge black;
+        padding: 0.5rem 0.8rem;
+
+        &.title-details {
+          margin: 1rem auto;
+          text-align: center;
+          border: none;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
 
       @include tablet {
         grid-template-rows: min-content 1fr;
@@ -23,17 +39,17 @@
       .group-projects {
         text-align: center;
         padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem 1rem;
 
         @include tablet {
           header {
             display: none;
           }
-        }
 
-        .projects {
-          ul {
-            list-style: none;
-
+          .projects {
             li {
               @include tablet {
                 display: inline-block;
@@ -47,10 +63,48 @@
             }
           }
         }
+
+        ul {
+          list-style: none;
+          padding: 1rem;
+
+          li {
+            font-family: nth($font-opens, 5);
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            label {
+              span {
+                display: inline-block;
+                position: relative;
+                width: 80%;
+                padding: 0.4rem;
+                border-radius: 0.6rem;
+                transition: color 2ms ease-in, box-shadow 500ms ease-in-out;
+              }
+
+              input {
+                display: none;
+
+                &:checked ~ span {
+                  color: rgb(177, 0, 0);
+                  border: solid greenyellow;
+                  border-width: 1px 2px;
+                  box-shadow: inset 0 0 10px greenyellow;
+                }
+              }
+            }
+          }
+        }
       }
 
-      .details-project {
-        padding: 0.5rem;
+      #details {
+        width: 90%;
+        place-self: center;
+
+        .details-project {
+          padding: 0.5rem;
+        }
       }
     }
   }
